@@ -48,6 +48,8 @@
 		<string>PGCapture</string>
 		<key>com.phonegap.splashscreen</key>
 		<string>PGSplashScreen</string>
+		<key>PhoneKal</key>
+		<string>PhoneKal</string>
 	</dict>
 </dict>
 </plist>

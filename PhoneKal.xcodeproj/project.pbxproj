@@ -33,7 +33,30 @@
 		AA863034150746F200140CD9 /* Capture.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AA863033150746F200140CD9 /* Capture.bundle */; };
 		AA863036150746F200140CD9 /* PhoneGap.plist in Resources */ = {isa = PBXBuildFile; fileRef = AA863035150746F200140CD9 /* PhoneGap.plist */; };
 		AA86303A150746F300140CD9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA863039150746F300140CD9 /* AppDelegate.m */; };
+		AA8630541507482600140CD9 /* PhoneKal.m in Sources */ = {isa = PBXBuildFile; fileRef = AA8630531507482600140CD9 /* PhoneKal.m */; };
+		AA8630561507489000140CD9 /* Kal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AA8630551507489000140CD9 /* Kal.bundle */; };
+		AA863057150748EA00140CD9 /* libKal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8630511507479900140CD9 /* libKal.a */; };
+		AA8630921507572400140CD9 /* www in Resources */ = {isa = PBXBuildFile; fileRef = AA8630911507572400140CD9 /* www */; };
+		AA86314C1507D40C00140CD9 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA86314B1507D40C00140CD9 /* EventKit.framework */; };
+		AA86314E1507D56A00140CD9 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA86314D1507D56A00140CD9 /* EventKitUI.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA8630501507479900140CD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA8630491507479800140CD9 /* Kal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Kal;
+		};
+		AA863094150793D600140CD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA8630491507479800140CD9 /* Kal.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Kal;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AA862FF5150746F200140CD9 /* PhoneKal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhoneKal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,10 +73,10 @@
 		AA86300D150746F200140CD9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AA86300F150746F200140CD9 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		AA863011150746F200140CD9 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		AA863015150746F200140CD9 /* PhoneKal-Info.plist */ = {isa = PBXFileReference; path = "PhoneKal-Info.plist"; sourceTree = "<group>"; };
+		AA863015150746F200140CD9 /* PhoneKal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhoneKal-Info.plist"; sourceTree = "<group>"; };
 		AA863017150746F200140CD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AA863019150746F200140CD9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AA86301B150746F200140CD9 /* PhoneKal-Prefix.pch */ = {isa = PBXFileReference; path = "PhoneKal-Prefix.pch"; sourceTree = "<group>"; };
+		AA86301B150746F200140CD9 /* PhoneKal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhoneKal-Prefix.pch"; sourceTree = "<group>"; };
 		AA86301C150746F200140CD9 /* PhoneGap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhoneGap.framework; path = /Users/Shared/PhoneGap/Frameworks/PhoneGap.framework; sourceTree = "<absolute>"; };
 		AA863021150746F200140CD9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AA863025150746F200140CD9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -64,9 +87,16 @@
 		AA863031150746F200140CD9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Resources/splash/Default@2x.png"; sourceTree = "<group>"; };
 		AA863033150746F200140CD9 /* Capture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Capture.bundle; path = Resources/Capture.bundle; sourceTree = "<group>"; };
 		AA863035150746F200140CD9 /* PhoneGap.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PhoneGap.plist; sourceTree = "<group>"; };
-		AA863038150746F200140CD9 /* AppDelegate.h */ = {isa = PBXFileReference; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		AA863038150746F200140CD9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		AA863039150746F300140CD9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		AA86303C150746F300140CD9 /* README */ = {isa = PBXFileReference; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		AA86303C150746F300140CD9 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		AA8630491507479800140CD9 /* Kal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kal.xcodeproj; path = ../../Kal/src/Kal.xcodeproj; sourceTree = "<group>"; };
+		AA8630521507482600140CD9 /* PhoneKal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneKal.h; sourceTree = "<group>"; };
+		AA8630531507482600140CD9 /* PhoneKal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneKal.m; sourceTree = "<group>"; };
+		AA8630551507489000140CD9 /* Kal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Kal.bundle; path = ../../Kal/src/Kal.bundle; sourceTree = "<group>"; };
+		AA8630911507572400140CD9 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		AA86314B1507D40C00140CD9 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		AA86314D1507D56A00140CD9 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +104,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA86314C1507D40C00140CD9 /* EventKit.framework in Frameworks */,
+				AA86314E1507D56A00140CD9 /* EventKitUI.framework in Frameworks */,
+				AA863057150748EA00140CD9 /* libKal.a in Frameworks */,
 				AA862FFA150746F200140CD9 /* Foundation.framework in Frameworks */,
 				AA862FFC150746F200140CD9 /* UIKit.framework in Frameworks */,
 				AA862FFE150746F200140CD9 /* CoreGraphics.framework in Frameworks */,
@@ -104,6 +137,9 @@
 		AA862FE7150746F200140CD9 = {
 			isa = PBXGroup;
 			children = (
+				AA86314D1507D56A00140CD9 /* EventKitUI.framework */,
+				AA86314B1507D40C00140CD9 /* EventKit.framework */,
+				AA8630911507572400140CD9 /* www */,
 				AA863013150746F200140CD9 /* PhoneKal */,
 				AA862FF8150746F200140CD9 /* Frameworks */,
 				AA862FF6150746F200140CD9 /* Products */,
@@ -141,6 +177,7 @@
 		AA863013150746F200140CD9 /* PhoneKal */ = {
 			isa = PBXGroup;
 			children = (
+				AA8630421507470500140CD9 /* Library */,
 				AA86301C150746F200140CD9 /* PhoneGap.framework */,
 				AA86301E150746F200140CD9 /* Resources */,
 				AA863037150746F200140CD9 /* Classes */,
@@ -221,9 +258,28 @@
 		AA86303B150746F300140CD9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				AA8630521507482600140CD9 /* PhoneKal.h */,
+				AA8630531507482600140CD9 /* PhoneKal.m */,
 				AA86303C150746F300140CD9 /* README */,
 			);
 			name = Plugins;
+			sourceTree = "<group>";
+		};
+		AA8630421507470500140CD9 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				AA8630551507489000140CD9 /* Kal.bundle */,
+				AA8630491507479800140CD9 /* Kal.xcodeproj */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		AA86304A1507479800140CD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA8630511507479900140CD9 /* libKal.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +299,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				AA863095150793D600140CD9 /* PBXTargetDependency */,
 			);
 			name = PhoneKal;
 			productName = PhoneKal;
@@ -268,12 +325,28 @@
 			mainGroup = AA862FE7150746F200140CD9;
 			productRefGroup = AA862FF6150746F200140CD9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AA86304A1507479800140CD9 /* Products */;
+					ProjectRef = AA8630491507479800140CD9 /* Kal.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AA862FF4150746F200140CD9 /* PhoneKal */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AA8630511507479900140CD9 /* libKal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKal.a;
+			remoteRef = AA8630501507479900140CD9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AA862FF0150746F200140CD9 /* Resources */ = {
@@ -290,6 +363,8 @@
 				AA863032150746F200140CD9 /* Default@2x.png in Resources */,
 				AA863034150746F200140CD9 /* Capture.bundle in Resources */,
 				AA863036150746F200140CD9 /* PhoneGap.plist in Resources */,
+				AA8630561507489000140CD9 /* Kal.bundle in Resources */,
+				AA8630921507572400140CD9 /* www in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +393,7 @@
 			files = (
 				AA86301A150746F200140CD9 /* main.m in Sources */,
 				AA86303A150746F300140CD9 /* AppDelegate.m in Sources */,
+				AA8630541507482600140CD9 /* PhoneKal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +405,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA863095150793D600140CD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kal;
+			targetProxy = AA863094150793D600140CD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AA863016150746F200140CD9 /* InfoPlist.strings */ = {
@@ -406,14 +490,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = /Users/Shared/PhoneGap/Frameworks;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhoneKal/PhoneKal-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = /Users/yann/Dev/Kal/src;
 				INFOPLIST_FILE = "PhoneKal/PhoneKal-Info.plist";
 				OTHER_LDFLAGS = (
+					"-all_load",
 					"-weak_framework",
 					UIKit,
 					"-weak_framework",
@@ -433,14 +521,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = /Users/Shared/PhoneGap/Frameworks;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PhoneKal/PhoneKal-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = /Users/yann/Dev/Kal/src;
 				INFOPLIST_FILE = "PhoneKal/PhoneKal-Info.plist";
 				OTHER_LDFLAGS = (
+					"-all_load",
 					"-weak_framework",
 					UIKit,
 					"-weak_framework",

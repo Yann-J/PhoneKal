@@ -30,6 +30,9 @@
  */
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+#if TARGET_IPHONE_SIMULATOR
+	[NSClassFromString(@"WebView") performSelector:@selector(_enableRemoteInspector)];
+#endif
 	
 	NSArray *keyArray = [launchOptions allKeys];
 	if ([launchOptions objectForKey:[keyArray objectAtIndex:0]]!=nil) 
@@ -102,11 +105,6 @@
 - (BOOL) execute:(InvokedUrlCommand*)command
 {
 	return [ super execute:command];
-}
-
-- (void)dealloc
-{
-	[ super dealloc ];
 }
 
 @end
