@@ -13,7 +13,7 @@ This is a simple attempt to develop a PhoneGap plugin for the Kal library to pre
 * Copy PhoneKal.js in your www folder and include it in the pages you need
 * Declare the plugin in PhoneGap.plist using "PhoneKal" as the plugin name and class name 
 * To use, invoke
-	window.plugins.PhoneKal.presentPicker(options,function(result) {...});
+    window.plugins.PhoneKal.presentPicker(options,function(result) {...});
 where options is a dictionary that can have the following keys:
     - initialDate - the date initially selected in the picker
     - title - the title appearing in the navigation bar
