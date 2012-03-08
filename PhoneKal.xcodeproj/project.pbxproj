@@ -39,6 +39,7 @@
 		AA8630921507572400140CD9 /* www in Resources */ = {isa = PBXBuildFile; fileRef = AA8630911507572400140CD9 /* www */; };
 		AA86314C1507D40C00140CD9 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA86314B1507D40C00140CD9 /* EventKit.framework */; };
 		AA86314E1507D56A00140CD9 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA86314D1507D56A00140CD9 /* EventKitUI.framework */; };
+		AA8631591508500700140CD9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AA8631581508500600140CD9 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		AA8630911507572400140CD9 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		AA86314B1507D40C00140CD9 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		AA86314D1507D56A00140CD9 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		AA8631581508500600140CD9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		AA862FE7150746F200140CD9 = {
 			isa = PBXGroup;
 			children = (
+				AA8631581508500600140CD9 /* README.md */,
 				AA86314D1507D56A00140CD9 /* EventKitUI.framework */,
 				AA86314B1507D40C00140CD9 /* EventKit.framework */,
 				AA8630911507572400140CD9 /* www */,
@@ -365,6 +368,7 @@
 				AA863036150746F200140CD9 /* PhoneGap.plist in Resources */,
 				AA8630561507489000140CD9 /* Kal.bundle in Resources */,
 				AA8630921507572400140CD9 /* www in Resources */,
+				AA8631591508500700140CD9 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,6 +572,7 @@
 				AA863041150746F300140CD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
